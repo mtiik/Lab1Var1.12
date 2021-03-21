@@ -2,55 +2,45 @@
 
 using namespace std;
 
-int proverka_nadrob(double m[], int drob, int n) {
+bool proverka_nadrob(double m[], int n) {
 	for (int i = 0; i < n; i++)
 	{
 		if (int(m[i]) != m[i])
 		{
-			drob = 1;
-			return drob;
-			break;
-
+			return true;
 		}
-
 	}
 
 	cout << "в масиве нет дробных чисел" << endl;
-	return drob;
+	return false;
 }
-int chet(double m[], double m2[], int drob, int mesto, int n) {
-	if (drob > 0) {
-		int mi = 0;
-		for (int i = 0; i < n; i++)
-		{
-			if (m[0] < m[i])
-			{
-				m2[mi] = m[i];
-				++mi;
-				++mesto;
-			}
-		}
-		mi = 0;
-		return mesto;
-	}
-	else
+
+int chet(double m[], double m2[], int mesto, int n) {
+	int mi = 0;
+	for (int i = 0; i < n; i++)
 	{
-		return 0;
-	}
-}
-void chet2(double m[], double m2[], int drob, int mesto, int n) {
-	if (drob > 0) {
-		m2[mesto] = m[0];
-		int k = n;
-		k--;
-		for (int i = 1; i < n; i++)
+		if (m[0] < m[i])
 		{
-			if (m[0] >= m[i])
-			{
-				m2[k] = m[i];
-				k--;
-			}
+			m2[mi] = m[i];
+			++mi;
+			++mesto;
 		}
-		k = 0;
 	}
+	mi = 0;
+	return mesto;
+}
+
+void chet2(double m[], double m2[], int mesto, int n) {
+	m2[mesto] = m[0];
+	int k = n;
+	k--;
+	for (int i = 1; i < n; i++)
+	{
+		if (m[0] >= m[i])
+		{
+			m2[k] = m[i];
+			k--;
+		}
+	}
+	k = 0;
 }

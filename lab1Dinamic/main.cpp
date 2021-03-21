@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 
 using namespace std;
+
 extern double* vvodd(int& sizes);
 extern void vivodd(double* arr, int sizes);
 extern double* chetd(double* arr1, int sizes);
