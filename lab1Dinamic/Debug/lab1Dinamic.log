@@ -1,0 +1,10 @@
+﻿  chet.cpp
+D:\labs\Lab1\lab1Dinamic\chet.cpp(7,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\labs\Lab1\lab1Dinamic\chet.cpp(19,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\labs\Lab1\lab1Dinamic\chet.cpp(30,20): warning C4018: <: несоответствие типов со знаком и без знака
+  main.cpp
+  vv.cpp
+D:\labs\Lab1\lab1Dinamic\vv.cpp(7,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\labs\Lab1\lab1Dinamic\vv.cpp(15,23): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  lab1Dinamic.vcxproj -> D:\labs\Lab1\Debug\lab1Dinamic.exe
