@@ -18,7 +18,8 @@ int main()
         vivodd(arr1, sizes);
         double* arr2 = chetd(arr1, sizes);
         vivodd(arr2, sizes);
-
+        delete[] arr1;
+        delete[] arr2;
         cout << "для повторного запуска программы нажмите 1 для завершения нажмите 0" << endl;
         cin >> povtor;
         if (povtor > 1 || povtor < 0)
