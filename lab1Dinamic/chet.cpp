@@ -16,7 +16,7 @@ double* chetd(double* arr1, int sizes) {
 		return 0;
 	}
 	int k = 0;
-	double* arr2 = new double(sizes);
+	double* arr2 = new double[sizes];
 	for (int i = 1; i < sizes; i++)
 	{
 		if (arr1[0] < arr1[i]) {
