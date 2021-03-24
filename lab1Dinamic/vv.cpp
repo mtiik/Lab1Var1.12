@@ -4,10 +4,10 @@ using namespace std;
 
 double* vvodd(int& sizes) {
     cin >> sizes;
-    double* arr1 = new double(sizes);
+    double* arr1 = new double[sizes];
     for (int i = 0; i < sizes; i++)
     {
-        cout << "ââåäèòå " << i << " ýëåìåíò " << endl;
+        cout << "Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ " << i << " Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² " << endl;
         cin >> arr1[i];
     }
     return arr1;
@@ -16,6 +16,6 @@ double* vvodd(int& sizes) {
 void vivodd(double* arr, int sizes) {
     for (int i = 0; i < sizes; i++)
     {
-        cout << i << " ýëåìåíò ìàññèâà = " << arr[i] << endl;
+        cout << i << " Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  = " << arr[i] << endl;
     }
 }
