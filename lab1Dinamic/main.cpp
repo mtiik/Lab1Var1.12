@@ -23,7 +23,6 @@ int main()
         double* arr1 = vvodd(sizes);
         vivodd(arr1, sizes);
         double* arr2 = chetd(arr1, sizes);
-<<<<<<< HEAD
         if (arr2)
         {
             vivodd(arr2, sizes);
@@ -34,11 +33,6 @@ int main()
             cout << "массив не создан" << endl;
         }
         delete[] arr1;
-=======
-        vivodd(arr2, sizes);
-        delete[] arr1;
-        delete[] arr2;
->>>>>>> d99fc3307237d582c5efc5f9929ed62a99cd6bd7
         cout << "для повторного запуска программы нажмите 1 для завершения нажмите 0" << endl;
         cin >> povtor;
         if (povtor > 1 || povtor < 0)
