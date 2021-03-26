@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Danila\Desktop\Lab1Var1.12-main\x64\Debug\Lab1static.exe</FullPath>
+      <FullPath>C:\Users\Danila\Desktop\Lab1Var1.12-main\x64\Release\Lab1static.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

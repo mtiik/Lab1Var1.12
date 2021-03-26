@@ -14,11 +14,25 @@ int main()
         int drob = 0;
         int sizes = 0;
         cout << "введите количество элементов" << endl;
+        cin >> sizes;
+        while (sizes < 0)
+        {
+            cout << "введено неверное n" << endl;
+            cin >> sizes;
+        }
         double* arr1 = vvodd(sizes);
         vivodd(arr1, sizes);
         double* arr2 = chetd(arr1, sizes);
-        vivodd(arr2, sizes);
-
+        if (arr2)
+        {
+            vivodd(arr2, sizes);
+            delete[] arr2;
+        }
+        else
+        {
+            cout << "массив не создан" << endl;
+        }
+        delete[] arr1;
         cout << "для повторного запуска программы нажмите 1 для завершения нажмите 0" << endl;
         cin >> povtor;
         if (povtor > 1 || povtor < 0)

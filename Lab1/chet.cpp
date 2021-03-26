@@ -15,32 +15,29 @@ bool proverka_nadrob(double m[], int n) {
 	return false;
 }
 
-int chet(double m[], double m2[], int mesto, int n) {
+int chet(double m[], double m2[], int n) {
 	int mi = 0;
+	if (!proverka_nadrob(m,n))
+	{
+		return 0;
+	}
 	for (int i = 0; i < n; i++)
 	{
 		if (m[0] < m[i])
 		{
 			m2[mi] = m[i];
 			++mi;
-			++mesto;
 		}
 	}
-	mi = 0;
-	return mesto;
-}
-
-void chet2(double m[], double m2[], int mesto, int n) {
-	m2[mesto] = m[0];
-	int k = n;
-	k--;
-	for (int i = 1; i < n; i++)
+	m2[mi] = m[0];
+	mi++;
+	for (int i = n-1; i > 0; i--)
 	{
 		if (m[0] >= m[i])
 		{
-			m2[k] = m[i];
-			k--;
+			m2[mi] = m[i];
+			mi++;
 		}
 	}
-	k = 0;
+	return mi;
 }
